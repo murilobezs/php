@@ -1,7 +1,7 @@
 <?php 
 include "conecta.php";
 
-include "menu.php"
+include "menu.php";
 ?>
 
 <!DOCTYPE html>
@@ -120,55 +120,30 @@ include "menu.php"
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-4">
-                    <h1 class="mt-4">Dashboard</h1>
+                    <h1 class="mt-4">Inserir novo cliente</h1>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item active"><a class="btn btn-primary" href="index.php">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a class="btn btn-primary" href="insere_cliente.php">Inserir cliente</a></li>
                     </ol>
                     <div class="card mb-4">
-                        <div class="card-header">
-                            <i class="fas fa-table me-1"></i>
-                            DataTable Example
-                        </div>
-                        <div class="card-body">
-                            <table id="datatablesSimple">
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Nome</th>
-                                        <th>E-mail</th>
-                                        <th>Telefone</th>
-                                        <th>Opções</th>
-                                    </tr>
-                                </thead>
-                                <tfoot>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Nome</th>
-                                        <th>Email</th>
-                                        <th>Telefone</th>
-                                        <th>Opções</th>
-                                    </tr>
-                                </tfoot>
-                                <tbody>
-                                    <?php
-                                        $sql = "SELECT * FROM clientes";
-                                        $consulta = $conexao->query($sql);
-                                        while($dados = $consulta->fetch_assoc()){
-                                            echo "<tr>";
-                                            echo "<td>".$dados['id_cliente']."<td>";
-                                            echo "<td>".$dados['nome_cliente']."<td>";
-                                            echo  "<td>".$dados['email_cliente']."<td>";
-                                            echo  "<td>".$dados['telefone']."<td>";
-                                            echo "<td>
-                                                <a class='btn btn-success' href='Atualizar'>Atualizar</a>
-                                                <a class='btn btn-danger' href='Apagar'>Apagar</a>
-                                            </td>";
-                                            echo "<tr>";
-                                        }
-                                    ?>
-                                </tbody>
-                            </table>
-                        </div>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                                            
+                                
+                        
                     </div>
                 </div>
             </main>

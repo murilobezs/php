@@ -1,9 +1,3 @@
-<?php 
-include "conecta.php";
-
-include "menu.php"
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -122,7 +116,7 @@ include "menu.php"
                 <div class="container-fluid px-4">
                     <h1 class="mt-4">Dashboard</h1>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item active"><a class="btn btn-primary" href="index.php">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a class="btn btn-primary" href="insere_cliente.php">Insere Cliente</a></li>
                     </ol>
                     <div class="card mb-4">
                         <div class="card-header">
