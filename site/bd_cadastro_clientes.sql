@@ -62,7 +62,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`) VALUES
-(1235, 'Taylor Swift', 'murisud17@gmail.com', '12082007Muri'),
+(1235, 'Taylor Swift', 'murisud17@gmail.com', '12082007muri'),
 (1236, 'Murilo Bezerra', 'murisud15@gmail.com', '12082007muri');
 
 --

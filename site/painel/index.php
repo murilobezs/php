@@ -1,4 +1,19 @@
 <?php 
+session_start();
+
+if((!isset($_SESSION['id']) == true) and (!isset($_SESSION['nome']) == true) and (!isset ($_SESSION['email']) == true)){
+
+    unset($_SESSION['id']);
+    unset($_SESSION['nome']);
+    unset($_SESSION['email']);
+    header('Location: ../index.html');
+
+
+    include 'conecta.php';
+}
+
+
+
 include "conecta.php";
 
 include "menu.php"
@@ -113,7 +128,10 @@ include "menu.php"
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Logged in as:</div>
-                    Start Bootstrap
+                    <?php 
+                    echo $_SESSION ['nome'];
+                    
+                    ?>
                 </div>
             </nav>
         </div>
@@ -127,7 +145,7 @@ include "menu.php"
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
-                            DataTable Example
+                            DataTable
                         </div>
                         <div class="card-body">
                             <table id="datatablesSimple">
