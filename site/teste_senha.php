@@ -1,10 +1,22 @@
 <?php
-    $senha = '12082007Muri';
+    $senha = '1234';
 
-    $senha_cripto = md5($teste);
+    // $data = date("Ymd");
+    // echo $data;
+    // echo "<br>";
+    // $total = $senha+$data;
 
-    echo 'Senha gerada => $senha';
+    $senha_cripto = md5($senha);
+
+    echo $senha_cripto;
+
+    //81dc9bdb52d04dc20036dbd8313ed055
+
+    //81dc9bdb52d04dc20036dbd8313ed055
 
 
-    // 81dc9bdb52d04dc20036dbd8313ed055
+
+
+
+
 ?>

@@ -1,21 +1,20 @@
 <?php
+
     session_start();
+
     require('conecta.php');
     $email = $_POST['email'];
-    $senha = $_POST['senha'];
-
-    
-
+    $senha = md5($_POST['senha']);
 
     $consulta = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
 
     $resultado = $conexao->query($consulta);
     $registros = $resultado->num_rows;
     $resultado_usuario = mysqli_fetch_assoc($resultado);
-    var_dump($resultado_usuario);
+    
+    //var_dump($resultado_usuario);
 
-    if($registros<>0){
-        //echo "TE ACHEI";
+    if($registros == 1){
         $_SESSION['id'] = $resultado_usuario['id'];
         $_SESSION['nome'] = $resultado_usuario['nome'];
         $_SESSION['email'] = $resultado_usuario['email'];
@@ -24,7 +23,10 @@
 
     }
     else{
-        //echo "NÃO ACHEI";
+        //echo "NÃO ACHEI";        
         header('Location: ../index.html');
     }
+
+
+
 ?>
