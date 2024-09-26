@@ -17,7 +17,7 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Dashboard</h1>
+                        <h1 class="mt-4">Painel</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">
                                 <a class="btn btn-success" href="insere_cliente.php">INSERIR NOVO CLIENTE</a>
@@ -59,8 +59,8 @@
                                             echo "<td>".$dados['email_cliente']."</td>";
                                             echo "<td>".$dados['telefone']."</td>";
                                             echo "<td>
-                                                <a class='btn btn-info' href='atualiza_cliente.php'>ATUALIZAR</a>
-                                                <a class='btn btn-danger' href=''>APAGAR</a>
+                                                <a class='btn btn-primary' href='atualiza_cliente.php?id=".$dados['id_cliente']."'>ATUALIZAR</a>                             
+                                                <a class='btn btn-danger' href='processa_delete_cliente.php?id=".$dados['id_cliente']."'>APAGAR</a>
                                             </td>";
                                             echo "</tr>";
                                         }
