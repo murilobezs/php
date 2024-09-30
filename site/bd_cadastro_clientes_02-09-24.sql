@@ -41,7 +41,27 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`id_cliente`, `nome_cliente`, `email_cliente`, `telefone`) VALUES
-(1, 'Etec MCM', 'etec@gmail.com', '(11) 98765-4321');
+(1, 'Taylor Swift', 'taylorswift13@gmail.com', '(11) 12345-6788'),
+(3, 'Dua Lipa', 'dualipa@gmail.com', '(11) 93085-0009'),
+(5, 'Aline Dantas', 'alicedantas@example.com', '(11) 98765-4321'),
+(6, 'Bob Builder', 'bob.builder@example.com', '(11) 99876-5432'),
+(7, 'Charlie Brown', 'charlie.brown@example.com', '(11) 91234-5678'),
+(8, 'Daisy Duck', 'daisy.duck@example.com', '(11) 96543-2109'),
+(9, 'Eve Adams', 'eve.adams@example.com', '(11) 93456-7890'),
+(10, 'Frank Castle', 'frank.castle@example.com', '(11) 87654-3210'),
+(11, 'Gina Rodriguez', 'gina.rodriguez@example.com', '(11) 84321-6543'),
+(13, 'Ivy League', 'ivy.league@example.com', '(11) 65432-1098'),
+(14, 'Jack Sparrow', 'jack.sparrow@example.com', '(11) 54321-0987'),
+(15, 'Kelly Clarkson', 'kelly.clarkson@example.com', '(11) 43210-9876'),
+(16, 'Leo Messi', 'leo.messi@example.com', '(11) 32109-8765'),
+(17, 'Maya Angelou', 'maya.angelou@example.com', '(11) 21098-7654'),
+(18, 'Nina Simone', 'nina.simone@example.com', '(11) 10987-6543'),
+(19, 'Oscar Wilde', 'oscar.wilde@example.com', '(11) 98760-5432'),
+(20, 'Paul McCartney', 'paul.mccartney@example.com', '(11) 87650-4321'),
+(22, 'Rachel Green', 'rachel.green@example.com', '(11) 65430-2109'),
+(23, 'Steve Rogers', 'steve.rogers@example.com', '(11) 54320-1098'),
+(24, 'Tina Fey', 'tina.fey@example.com', '(11) 43210-0987');
+
 
 -- --------------------------------------------------------
 
@@ -61,7 +81,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`) VALUES
-(1, 'ANDERSON VANIN', 'anderson@email.com', '81dc9bdb52d04dc20036dbd8313ed055');
+(1, 'Murilo Bezera', 'murisud15@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055');
 
 --
 -- Índices para tabelas despejadas
